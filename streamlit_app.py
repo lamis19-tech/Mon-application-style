@@ -1,33 +1,24 @@
 import streamlit as st
 
-st.title("🎈 My new app")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-)
-import streamlit as st
+# Configuration
+st.set_page_config(page_title="The Smart Closet", layout="wide")
 
-# Configuration de la page
-st.set_page_config(page_title="Mon Projet", layout="wide")
+# Titre
+st.title("✨ The Smart Closet")
+st.subheader("Votre guide d'élégance personnalisé")
 
-# Titre principal
-st.title("✨ Bienvenue dans mon univers")
-
-# Une petite introduction
-st.subheader("La mode et l'élégance à portée de main")
-
-# Création de deux colonnes pour le visuel
+# Organisation en colonnes
 col1, col2 = st.columns(2)
 
 with col1:
-    st.write("Ici, nous allons construire ton catalogue visuel.")
-    # Bouton d'action
-    if st.button('Découvrir la collection'):
+    st.write("Bienvenue dans votre espace dédié au style.")
+    if st.button('Lancer une surprise 🎈'):
         st.balloons()
-        st.success("C'est parti !")
 
 with col2:
-    # Espace pour une image (tu pourras remplacer l'URL plus tard)
-    st.image("https://images.unsplash.com/photo-1445205170230-053b83e26371", caption="Inspiration Style")
+    # Image d'inspiration mode
+    st.image("https://images.unsplash.com/photo-1490481651871-ab68de25d43d", caption="Style & Élégance")
 
 st.divider()
-st.info("Astuce : Pour ajouter tes propres schémas de Canva, il suffira de les importer ici !")
+st.info("Prochaine étape : Intégrer vos schémas et visuels ici !")
+
